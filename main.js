@@ -16,9 +16,9 @@ function READY_DISCORD() {
 
 function BORKLOL(msg) {
     console.log(msg.content)
-    if(msg.author.id === "765509287954481152")
+    if(msg.author.id === process.env.WHOAMI)
     { 
-        if(msg.content === "give treat"){return msg.reply('*NOMNOMNOM*');}
+        if(msg.content.toLowerCase.msg.content.includes("give treat")){return msg.reply('*NOMNOMNOM*');}
         else {return msg.reply('**BORK!**');}
     }
 }
